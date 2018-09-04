@@ -1,0 +1,16 @@
+/src
+/logs
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+*.force
+installer2/*.class
+installer2/*.jar
+solutions/documentation/html
+solutions/documentation/*.tmp
+solutions/**.zip
+**/packages/
+**/.vs/
+**/.idea/
