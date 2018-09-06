@@ -1,0 +1,4 @@
+author = HeroScorp
+version = 0.6
+displayName = Chlorostuff
+homepage = https://forums.terraria.org/index.php?threads/chlorostuff-a-mod-made-just-because.72327/
