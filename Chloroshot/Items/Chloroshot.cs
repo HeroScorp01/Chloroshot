@@ -60,7 +60,7 @@ namespace Chloroshot.Items
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
-            int numberProjectiles = 10 + Main.rand.Next(2);
+            int numberProjectiles = 20 + Main.rand.Next(2);
             for (int i = 0; i < numberProjectiles; i++)
             {
                 Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(30)); // 30 degree spread.
