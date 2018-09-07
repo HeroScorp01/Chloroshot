@@ -43,7 +43,7 @@ namespace Chloroshot.Items
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Stinger, 15);
             recipe.AddIngredient(ItemID.JungleSpores, 15);
-            recipe.AddIngredient(ItemID.Vine, 15);
+            recipe.AddIngredient(ItemID.Vine, 5);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
