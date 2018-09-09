@@ -39,7 +39,7 @@ namespace Chloroshot.Items
 			{
 				type = ProjectileID.ExplosiveBullet;
 			}
-			return true; // return true to allow tmodloader to call Projectile.NewProjectile as normal
+			return true;
 		}
 
         public override void AddRecipes()
