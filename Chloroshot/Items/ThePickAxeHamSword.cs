@@ -25,7 +25,7 @@ namespace Chloroshot.Items
             item.knockBack = 6;
             item.value = 100000;
             item.rare = 12;
-            item.UseSound = SoundID.Item1;
+            item.UseSound = SoundID.Item15;
             item.autoReuse = true;
         }
 
