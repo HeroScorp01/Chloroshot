@@ -18,7 +18,7 @@ namespace Chloroshot.Items
 			item.height = 50;
 			item.useTime = 60;
 			item.useAnimation = 60;
-           		item.axe = 80;
+            item.axe = 80;
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
@@ -31,12 +31,12 @@ namespace Chloroshot.Items
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.LunarBar, 50);
-            		recipe.AddIngredient(ItemID.HellstoneBar, 25);
-            		recipe.AddIngredient(ItemID.FragmentSolar, 10);
-            		recipe.AddIngredient(ItemID.FragmentVortex, 10);
-            		recipe.AddIngredient(ItemID.FragmentNebula, 10);
-            		recipe.AddIngredient(ItemID.FragmentStardust, 10);
-           		 recipe.AddTile(TileID.LunarCraftingStation);
+            recipe.AddIngredient(ItemID.HellstoneBar, 25);
+            recipe.AddIngredient(ItemID.FragmentSolar, 10);
+            recipe.AddIngredient(ItemID.FragmentVortex, 10);
+            recipe.AddIngredient(ItemID.FragmentNebula, 10);
+            recipe.AddIngredient(ItemID.FragmentStardust, 10);
+            recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

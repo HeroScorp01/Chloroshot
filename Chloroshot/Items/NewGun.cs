@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace Chloroshot.Items
 {
-    public class Chloroshot : ModItem
+    public class NewGun : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -35,12 +35,16 @@ namespace Chloroshot.Items
 
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.ShroomiteBar, 25);
-            recipe.AddIngredient(ItemID.ChlorophyteBar, 30);
-            recipe.AddTile(TileID.MythrilAnvil);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            Mod tremor = ModLoader.GetMod("Tremor");
+           
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(ItemID.ShroomiteBar, 25);
+                recipe.AddIngredient(ItemID.ChlorophyteBar, 30);
+                recipe.AddIngredient(tremor.ItemType("Squorb"), 5);
+                recipe.AddTile(TileID.MythrilAnvil);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            
         }
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
