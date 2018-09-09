@@ -14,7 +14,7 @@ namespace Chloroshot.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 34;
+			item.damage = 40;
 			item.ranged = true;
 			item.width = 30;
 			item.height = 20;
