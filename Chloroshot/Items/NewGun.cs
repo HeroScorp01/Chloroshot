@@ -40,8 +40,8 @@ namespace Chloroshot.Items
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(ItemID.ShroomiteBar, 25);
                 recipe.AddIngredient(ItemID.ChlorophyteBar, 30);
-                recipe.AddIngredient(tremor.ItemType("Squorb"), 5);
-                recipe.AddTile(TileID.MythrilAnvil);
+                recipe.AddIngredient(tremor.ItemType("Brass Bar"), 5);
+                recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
             
