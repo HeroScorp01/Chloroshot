@@ -41,7 +41,7 @@ namespace Chloroshot.Items
                 recipe.AddIngredient(ItemID.ShroomiteBar, 25);
                 recipe.AddIngredient(ItemID.ChlorophyteBar, 30);
                 recipe.AddIngredient(tremor.ItemType("BrassBar"), 20);
-                recipe.AddIngredient(tremor.ItemType("CarbonSteel"),15);
+                recipe.AddIngredient(tremor.ItemType("CarbonSteel"), 15);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.SetResult(this);
                 recipe.AddRecipe();
