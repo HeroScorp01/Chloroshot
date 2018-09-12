@@ -29,7 +29,7 @@ namespace Chloroshot.Items
 
 			item.UseSound = SoundID.Item1;
 			item.value = Item.sellPrice(silver: 5);
-			item.shoot = mod.ProjectileType<ExampleJavelinProjectile>();
+			item.shoot = mod.ProjectileType<BigCProjectile>();
 		}
     public override void AddRecipes()
 		{
