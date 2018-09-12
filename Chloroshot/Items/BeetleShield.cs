@@ -1,15 +1,15 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ExampleMod.Items
+namespace Chloroshot.Items
 {
 	[AutoloadEquip(EquipType.Shield)]
-	public class ExampleShield : ModItem
+	public class BeetlShield : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("This is a modded accessory."
-				+ "\nOnly equip if your character's name is bluemagic123");
+			Tooltip.SetDefault("A Beetle Shield."
+				+ "Gives Beetle Powers");
 		}
 
 		public override void SetDefaults()
@@ -17,19 +17,16 @@ namespace ExampleMod.Items
 			item.width = 24;
 			item.height = 28;
 			item.value = 10000;
-			item.rare = 2;
+			item.rare = 7;
 			item.accessory = true;
-			item.defense = 1000;
+			item.defense = 4;
 			item.lifeRegen = 19;
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 				player.meleeDamage += 19f;
-				player.thrownDamage += 19f;
 				player.rangedDamage += 19f;
-				player.magicDamage += 19f;
-				player.minionDamage += 19f;
 				player.endurance = 1f - 0.1f * (1f - player.endurance);
 				player.GetModPlayer<ExamplePlayer>().exampleShield = true;
 		}
@@ -37,8 +34,8 @@ namespace ExampleMod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "EquipMaterial", 60);
-			recipe.AddTile(null, "ExampleWorkbench");
+			recipe.AddIngredient(ItemId.HellStoneBar, 60);
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
