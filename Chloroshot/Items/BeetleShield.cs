@@ -34,8 +34,9 @@ namespace Chloroshot.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemId.HellStoneBar, 60);
-			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.AddIngredient(ItemId.BeetleShell, 15);
+			recipe.AddIngerdient(ModId.TurtleShield,1);
+			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
